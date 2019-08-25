@@ -1,0 +1,240 @@
+body {
+ font-family: 'Advent Pro'
+}
+img#hamburger {
+	display: block;
+      position: absolute;
+      top: 1rem;
+      width: 3rem;
+      font-weight: 300;
+      padding-left: 0.5rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+			display: block;
+			left: 45%;
+
+}
+.naam{
+	font-size: 3rem;
+	padding: 1rem;
+	display: block;
+	background-color: #E1E6CE;
+
+}
+
+nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #E1E6CE;
+  		margin-bottom: 2rem;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 2s;
+      text-align: center;
+			padding-top: 3rem;
+			z-index: 10;
+}
+
+
+
+nav a:nth-child(1) {
+      color: white;
+			font-weight: bold;
+			font-size: 4rem;
+
+}
+
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-bottom: 1rem;
+}
+
+nav a:hover {
+	color: white;
+  border-bottom: 1px solid black;
+}
+
+
+.zichtbaar {
+      opacity: 1;
+      height: 150vw;
+			z-index: 10;
+}
+
+
+footer{
+	padding: 2rem;
+	background-color: #E1E6CE;
+  margin: 0rem;
+	margin-top: 5rem;
+
+}
+footer a{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+
+	text-decoration: none;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+	color: black;
+}
+.links{
+  margin: 3rem;
+  background-color: #D3DDC7;
+  padding: 2rem;
+}
+h1{
+  font-size: 2.5rem;
+}
+
+input{
+  display: flex;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 0  3rem 0;
+}
+
+fieldset{
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+/* invulvak*/
+#inputField{
+    border: 1px solid black;
+    height: 100%;
+    display: inline-block;
+}
+
+.element{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+		background-color: white;
+		padding: 10px;
+}
+
+.invul{
+  width: 20rem;
+	padding: 2rem;
+	border: 1px	solid black;
+  background-image: linear-gradient(180deg,white,#E1E6CE);
+}
+
+.invul input{
+  border: 1px	solid black;
+  width: 17rem;
+
+}
+
+p{
+  text-transform: uppercase;
+
+  font-size: 1.10rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  width: 14rem;
+  text-align: center;
+}
+
+button{
+  font-size: 1.25rem;
+  border: 1px	solid black;
+  width: 18rem;
+  padding: 0.5rem;
+  background-color: #D3DDC7;
+  color: white;
+}
+h3{
+  visibility: hidden;
+}
+
+
+@media (min-width: 1000px) {
+  nav {
+        display: flex;
+        flex-direction: row;
+
+  			background-color: #E1E6CE;
+    		margin-bottom: 2rem;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        transition: all 2s;
+        text-align: center;
+  			padding-top: 3rem;
+  }
+  nav a {
+        position: absolute;
+        top: -1rem;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        margin-right: 1.75rem;
+  			padding-top: 3rem;
+  }
+
+  nav a:nth-child(1) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        color: black;
+  			font-weight: bold;
+  			font-size: 2rem;
+        right: 5rem;
+  }
+  nav a:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 15rem;
+  }
+  nav a:nth-child(3) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 25rem;
+  }
+  nav a:nth-child(4) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 35rem;
+  }
+
+  .zichtbaar{
+    opacity: 1;
+    height: 0vw;
+  }
+  #hamburger{
+    visibility: hidden;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 2.5fr  1fr;
+  }
+
+  h3{
+    visibility:visible;
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    height: 65%;
+  }

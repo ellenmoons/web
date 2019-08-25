@@ -1,0 +1,337 @@
+body {
+ font-family: 'Advent Pro'
+}
+img#hamburger {
+	display: block;
+      position: absolute;
+      top: 1rem;
+      width: 3rem;
+      font-weight: 300;
+      padding-left: 0.5rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+			display: block;
+			left: 45%;
+}
+.naam{
+	font-size: 3rem;
+	padding: 1rem;
+	display: block;
+	background-color: #E1E6CE;
+
+}
+p {
+  visibility: hidden;
+}
+
+
+nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #E1E6CE;
+  		margin-bottom: 2rem;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 2s;
+      text-align: center;
+			padding-top: 3rem;
+}
+
+
+
+nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 3rem;
+      margin-right: 30%;
+      margin-left: 30%;
+      padding-bottom: 1rem;
+
+}
+nav a:hover {
+	color: white;
+  border-bottom: 1px solid black;
+}
+
+
+.zichtbaar {
+      opacity: 1;
+      height: 150vw;
+      margin-bottom: 0rem;
+}
+
+ h1{
+	color: white;
+	font-weight: bold;
+	font-size: 6rem;
+	text-transform: uppercase;
+  margin-top: -10rem;
+}
+
+.slide img{
+  width: 100%;
+}
+
+.slide{
+  padding: 0rem;
+  margin-top: -5rem;
+}
+
+
+main{
+	margin: 4rem;
+	background-color: #F1F6EC;
+	padding: 3rem;
+}
+
+footer{
+	padding: 2rem;
+	background-color: #E1E6CE;
+  margin: 0rem;
+}
+footer a{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+
+	text-decoration: none;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+	color: black;
+}
+
+main {
+	column-count: 0;
+}
+
+.photos a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin: 2rem;
+	position: relative;
+
+	animation-name: omhoog;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+
+}
+.photos {
+ margin: 2rem;
+}
+
+.photos h2{
+
+	position: absolute;
+	left: 0px;
+				bottom: 10px;
+				width: 90%;
+				background-image: url("afb/cover.jpg");
+        background-position: bottom;
+				background-size: cover;
+				color: white;
+				padding: 10px;
+}
+
+h2{
+	font-size: 2rem;
+	text-align: center;
+	padding-top: 10rem;
+  visibility: hidden;
+	animation-name: opac;
+	animation-duration: 3s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+  animation-play-state: paused;
+}
+
+@keyframes opac {
+  0%{
+    transform: translate(0vw,20vw);
+		opacity: 0;
+  }
+  100%{
+    transform: translate(0,0vw);
+		opacity: 1s
+  }
+}
+
+
+a:hover h2{
+	visibility: visible;
+	opacity: 1;
+  animation-play-state: running;
+}
+
+
+main img {
+	max-width: 100%;
+	display: block;
+}
+
+
+
+
+@media (min-width: 1000px) {
+  nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 3rem;
+        margin-right: 1.75rem;
+  			padding-top: 3rem;
+        width: 5rem;
+        height: 3rem
+  }
+  .slide{
+    padding: 0rem;
+    margin-top: -2rem;
+  }
+
+
+  nav {
+        display: flex;
+        flex-direction: row;
+
+  			background-color: #E1E6CE;
+    		margin-bottom: 2rem;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        transition: all 2s;
+        text-align: center;
+  			padding-top: 3rem;
+  }
+  nav a {
+        position: absolute;
+        top: -1rem;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        margin-right: 1.75rem;
+  			padding-top: 3rem;
+  }
+
+  nav a:nth-child(1) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        color: black;
+  			font-weight: bold;
+  			font-size: 2rem;
+        right: 5rem;
+  }
+  nav a:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 15rem;
+  }
+  nav a:nth-child(3) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 25rem;
+  }
+  nav a:nth-child(4) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 35rem;
+  }
+
+  .zichtbaar{
+    opacity: 1;
+    height: 0vw;
+  }
+
+#hamburger{
+  visibility: hidden;
+}
+
+h1{
+  position: absolute;
+ top: 35rem;
+ left: 5rem;
+}
+
+
+p {
+  visibility:  visible;
+position: absolute;
+color: white;
+top: 33rem;
+left: 5rem;
+font-size: 1.8rem;
+
+animation-name: opzij;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+
+}
+
+main .photos {
+    column-count: 3;
+    column-gap: 0vw;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .photos a {
+    margin: 0rem;
+  }
+  .photos h2{
+
+  	position: absolute;
+  	left: 0px;
+    font-size: 4rem;
+  				bottom: 10px;
+  				width: 100%;
+          height: 95%;
+  				background-image: url("afb/cover.jpg");
+          background-position: bottom;
+  				background-size: cover;
+  				color: black;
+  }
+
+  @keyframes opac {
+    0%{
+      transform: translate(0vw,20vw);
+  		opacity: 0;
+    }
+    100%{
+      transform: translate(0,0vw);
+  		opacity: 0.50;
+    }
+  }
+
+
+
+
+@keyframes opzij {
+  0%{
+    transform: translate(-100vw,0vw);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0vw);
+    opacity: 1s
+  }
+}
+
+
+    @media (min-width: 1400px) {
+      main .photos {
+          margin: 1rem;
+          column-count: 6;
+          column-gap: 0vw;
+          margin: 0rem;
+          padding: 0rem;
+        }
+
+}

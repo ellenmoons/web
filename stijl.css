@@ -1,0 +1,527 @@
+body {
+ font-family: 'Advent Pro'
+}
+img#hamburger {
+	display: block;
+      position: absolute;
+      top: 1rem;
+      width: 3rem;
+      font-weight: 300;
+      padding-left: 0.5rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+			display: block;
+			left: 45%;
+
+}
+.naam{
+	font-size: 3rem;
+	padding: 1rem;
+	display: block;
+	background-color: #E1E6CE;
+
+}
+p {
+  visibility: hidden;
+}
+
+nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #E1E6CE;
+  		margin-bottom: 2rem;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 2s;
+      text-align: center;
+			padding-top: 3rem;
+}
+
+
+
+nav a:nth-child(1) {
+      color: white;
+			font-weight: bold;
+			font-size: 4rem;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-bottom: 1rem;
+}
+
+nav a:hover {
+	color: white;
+  border-bottom: 1px solid black;
+}
+
+
+.zichtbaar {
+      opacity: 1;
+      height: 150vw;
+      margin-bottom: 3rem;
+
+}
+
+ h1{
+	color: white;
+	font-weight: bold;
+	font-size: 6rem;
+	height: 20rem;
+	background-image: url(afb/cover.jpg);
+	background-position:bottom;
+	background-size:cover;
+	margin: 3rem	4rem	0rem	3rem;
+	justify-content: center;
+	padding-top: 25rem;
+	text-transform: uppercase;
+}
+
+
+
+main{
+	margin: 4rem;
+	background-color: #F1F6EC;
+	padding: 3rem;
+}
+
+.eerste a, .tweede a, .derde a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin: 2rem;
+	position: relative;
+}
+
+
+
+.eerste img{
+	width: 80%;
+	position: relative;
+	border: 4px solid black;
+
+}
+
+.eerste h2{
+	font-size: 2rem;
+	position: absolute;
+	left: 75%;
+	height: 10%;
+				padding: 3rem;
+				text-align: center;
+				padding-top: 10rem;
+				top: -1rem;
+				width: 10%;
+				background-color: #E1E6CE;
+				color: black;
+				border: 1px solid black;
+}
+
+.eerste img:nth-child(3){
+	visibility: hidden;
+  position: absolute;
+}
+.eerste img:nth-child(4){
+	visibility: hidden;
+  position: absolute;}
+
+  .eerste img:nth-child(5){
+  	visibility: hidden;
+    position: absolute;}
+
+.tweede img{
+	margin-top: 2rem;
+	margin-left: 40%;
+	width: 70%;
+	position: relative;
+	border: 4px solid black;
+
+}
+
+.tweede h2{
+	font-size: 2rem;
+	position: absolute;
+	left: 10%;
+	height: 10%;
+				padding: 3rem;
+				text-align: center;
+				padding-top: 10rem;
+				bottom: 4rem;;
+				width: 30%;
+				background-color: #E1E6CE;
+				color: black;
+				border: 1px solid black;
+}
+
+.derde img{
+	margin-left: 5%;
+	margin-top: 6rem;
+	width: 50%;
+	position: relative;
+	border: 4px solid black;
+
+}
+
+.derde h2{
+	font-size: 2rem;
+	position: absolute;
+	left: 40%;
+	height: 5%;
+	padding: 4rem;
+	text-align: center;
+	padding-top: 10rem;
+	top: 4rem;
+	width: 10%;
+	background-color: #E1E6CE;
+	color: black;
+	border: 1px solid black;
+}
+
+.inlog{
+  position: absolute;
+  top: 10rem;
+  left: 10%;
+  width: 3rem;
+  line-height: 2rem;
+}
+
+#wachtwoord{
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  width: 9rem;
+}
+
+button{
+  background-color:#E1E6CE;
+  border: 1px solid black;
+  font-size: 1.10rem;
+  width: 10rem;
+}
+
+
+h3{
+  font-size: 2rem;
+}
+
+footer{
+	padding: 2rem;
+	background-color: #E1E6CE;
+  margin: 0rem;
+}
+footer a{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+
+	text-decoration: none;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+	color: black;
+}
+
+@media (min-width: 1000px) {
+  nav {
+        display: flex;
+        flex-direction: row;
+
+  			background-color: #E1E6CE;
+    		margin-bottom: 2rem;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        transition: all 2s;
+        text-align: center;
+  			padding-top: 3rem;
+  }
+  nav a {
+        position: absolute;
+        top: -1rem;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        margin-right: 1.75rem;
+  			padding-top: 3rem;
+  }
+
+  nav a:nth-child(1) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        color: black;
+  			font-weight: bold;
+  			font-size: 2rem;
+        right: 5rem;
+  }
+  nav a:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 15rem;
+  }
+  nav a:nth-child(3) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 25rem;
+  }
+  nav a:nth-child(4) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:2rem;
+        right: 35rem;
+  }
+
+  .zichtbaar{
+    opacity: 1;
+    height: 0vw;
+  }
+    .inlog{
+      top: 3rem;
+}
+
+#hamburger{
+  visibility: hidden;
+}
+h1{
+  text-align: center;
+ color: white;
+ font-weight: bold;
+ font-size: 6rem;
+ height: 35rem;
+ background-image: url(afb/cover.jpg);
+ background-position:bottom;
+ background-size:cover;
+ margin: 0;
+ justify-content: center;
+ padding-top: 25rem;
+ text-transform: uppercase;
+}
+
+p {
+  visibility:  visible;
+position: absolute;
+color: white;
+top: 43rem;
+right: 10rem;
+font-size: 1.8rem;
+
+animation-name: opzij;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+
+}
+
+@keyframes opzij {
+  0%{
+    transform: translate(-100vw,0vw);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0vw);
+    opacity: 1s
+  }
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.eerste{
+  grid-column: 1/4;
+}
+
+.tweede{
+  grid-column: 1;
+}
+.derde{
+  grid-column: 2;
+}
+
+.eerste img{
+	width: 50%;
+	position: relative;
+	border: 4px solid black;
+
+}
+
+
+
+  .eerste h2{
+  	position: absolute;
+  	left: 55%;
+  	height:2rem;
+  				padding: 2rem;
+  				text-align: center;
+  				top: 0rem;
+  				width: 30%;
+  				background-color: #E1E6CE;
+  				color: black;
+  				border: 1px solid black;
+  }
+
+  .eerste img:nth-child(3){
+  	visibility: visible;
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 48%;
+
+  }
+  .eerste img:nth-child(4){
+  	visibility: visible;
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 68%;
+  }
+
+    .eerste img:nth-child(5){
+    	visibility: visible;
+      position: absolute;
+      width: 20%;
+      top: 49%;
+      left: 87%;
+
+    }
+
+    .tweede img{
+    	margin-top: 2rem;
+    	margin-left: 0%;
+    	width: 100%;
+    }
+
+    .tweede h2{
+    	margin: 3rem;
+      opacity: 0.75;
+    }
+
+    .derde img{
+      margin-top: 2rem;
+    	margin-left: 0%;
+    	width: 100%;
+
+    }
+
+    .derde h2{
+      top: 15rem;
+      width: 6rem;
+      left: 4rem;
+      opacity: 0.75;
+    }
+    .tweede p{
+      opacity: 0;
+    }
+
+
+  }
+
+
+    @media (min-width: 1400px) {
+      main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+      }
+      .eerste{
+        grid-column: 1/4;
+      }
+
+      .tweede{
+        grid-column: 1;
+
+      }
+      .derde{
+        grid-column: 1;
+      }
+
+      .tweede img{
+        margin-left: 50%;
+        width: 30%;
+        position: relative;
+        border: 4px solid black;
+      }
+
+      .lijn{
+        visibility: visible;
+        border: 2px solid black;
+        height: 45rem;
+        position: absolute;
+        left: -20rem;
+        top: 0;
+        width: 110%;
+      }
+      .derde img{
+        margin-left: 25%;
+        width: 30%;
+        margin-top: -22rem;
+        position: relative;
+        border: 4px solid black;
+      }
+
+      .lijntwee{
+        visibility: visible;
+        border: 2px solid black;
+        height: 45rem;
+        position: absolute;
+        right: -10rem;
+        top: -27rem;
+        width: 90%;
+      }
+
+      .tweede p{
+        color: black;
+        font-size: 1.25rem;
+        width: 30rem;
+        line-height: 2rem;
+        text-align: justify;
+        left: 5%;
+        top: 15rem;
+        background-color: ;
+        padding: 1rem;
+        opacity: 1;
+
+      }
+      .tweede h2{
+        visibility: visible;
+        padding-top: 2rem;
+        left: 10%;
+        height:2rem;
+        padding: 2rem;
+              text-align: center;
+              top: 0rem;
+              width: 30%;
+              background-color: #E1E6CE;
+              color: black;
+              border: 1px solid black;
+      }
+      .inlog{
+        position: absolute;
+        top: -10rem;
+        left: 60%;
+        width: 15rem;
+        padding: 3rem;
+        line-height: 2rem;
+        background-color: white;
+      }
+      .derde h2{
+        padding-top: 2rem;
+
+        top: -20rem;
+        width: 30%;
+        left: 60%;
+        opacity: 1;
+      }
+
+
+}
